@@ -1,2 +1,4 @@
-# Portfolio-Redesgined
-Powered by Bootstrap, portfolio redesigned for Bootcamp
+# Portfolio-Redesigned
+Powered by Bootstrap, portfolio redesigned for Bootcamp.
+
+Root of Github.io
