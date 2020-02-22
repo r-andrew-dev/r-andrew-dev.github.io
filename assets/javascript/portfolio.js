@@ -3,10 +3,20 @@
 $("#button-holder").on("click", ".One", function() {
     $("#contact-button").css("display","block");;
     $(".One").text("About");
+    $(".current-img").attr("src", $(".current-img").data("main"));
+    $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
+    $(".current-img").addClass("work");
+    $(".current-img").parent().removeClass("twelve current");
+    $(".current-img").parent().addClass("six");
+    $(".u-max-full-width").removeClass("current-img");
+    $("#odd-row").children().attr("class", "twelve columns")
+    $("#work-button").removeClass("One");
+    $(".Site").css("display", "none");
+    $(".Six").css("display", "none");
 
 
     $("#About").fadeOut("slow", function() {
-        $(".hidden1").fadeIn("slow");
+        $(".hidden1, .work").fadeIn("slow");
         $("#work-button").addClass("Two");
         $("#work-button").removeClass("One");
     });
@@ -37,17 +47,11 @@ $("#button-holder").on("click", ".Two", function(){
         $(".Three").removeClass("One")
         $(".Three").text("Back to Work");
         $(".Site").css("display", "inline");
+        $(".Six").css("display", "inline")
         $(".Site").attr("href", $(this).data("site"));
     });
 
-    $("#button-holder").on("click", "#contact-button", function() {
-        $(".container, .hidden1, #button-holder").fadeOut("slow" , function() {
-        $("#contact").fadeIn("fast");
-        })
-    })
-
-    $("#button-holder").on("click", ".Three", function() {
-        console.log("clicked");
+    $(".hidden1").on("click", "#back-to-work", function() {
         $(".work").show();
         $(".current-img").attr("src", $(".current-img").data("main"));
         $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
@@ -56,9 +60,16 @@ $("#button-holder").on("click", ".Two", function(){
         $(".current-img").parent().addClass("six");
         $(".u-max-full-width").removeClass("current-img");
         $("#odd-row").children().attr("class", "twelve columns")
-        $(".Two").text("Reach Out");
-        
-    });
+        $(".Site").css("display", "none");
+        $(".Six").css("display", "none");
+
+    })
+
+    $("#button-holder").on("click", "#contact-button", function() {
+        $(".container, .hidden1, #button-holder").fadeOut("slow" , function() {
+        $("#contact").fadeIn("fast");
+        })
+    })
 
     $("#button-holder2").on("click", ".Four", function() {
 
@@ -72,9 +83,18 @@ $("#button-holder").on("click", ".Two", function(){
     });
 
     $("#button-holder2").on("click", ".Five", function() {
-            $("#work-button").removeClass("One");
+        $(".current-img").attr("src", $(".current-img").data("main"));
+        $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
+        $(".current-img").addClass("work");
+        $(".current-img").parent().removeClass("twelve current");
+        $(".current-img").parent().addClass("six");
+        $(".u-max-full-width").removeClass("current-img");
+        $("#odd-row").children().attr("class", "twelve columns")
+        $("#work-button").removeClass("One");
+        $(".Site").css("display", "none");
+        $(".Six").css("display", "none");
         $("#contact, button-holder2, #About").fadeOut("slow", function() {
-            $(".container, .hidden1, #button-holder").fadeIn("slow");
+            $(".container, .hidden1, #button-holder, .work").fadeIn("slow");
             $("#work-button").text("About")
             $("#work-button").addClass("Two");
 

@@ -127,5 +127,11 @@ p {
     display: inline-block;
 }
 
+#site-button {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2% 2%;
+    margin: 1%;
+}
 
     
