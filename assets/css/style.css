@@ -84,7 +84,7 @@ p {
 
 .button-primary.custom, .button.button-primary.custom {
     background-color: #34424D;
-    margin: .5% auto;
+    margin: 0.3% auto;
     text-align: center;
     display: block;
 }

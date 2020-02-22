@@ -35,7 +35,7 @@ $("#button-holder").on("click", ".Two", function(){
 })
 
     $(".work").on("click", function() {
-        $(this).css({"width": "600px", "margin": "10% auto", "opacity": "1", "display": "block"});
+        $(this).css({"width": "600px", "margin": "3% auto", "opacity": "1", "display": "block"});
         $(this).parent().removeClass("six");
         $(this).parent().addClass("twelve current");
         $(this).addClass("current-img")
