@@ -127,11 +127,14 @@ p {
     display: inline-block;
 }
 
-#site-button {
-    font-weight: bold;
-    font-size: 14px;
+#site-button a {
+    font-weight: 600;
+    font-size: 11px;
     padding: 2% 2%;
-    margin: 1%;
+    margin: auto 1%;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
 }
 
     

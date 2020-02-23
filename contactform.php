@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 if(isset($_POST['submit'])) {
    
@@ -15,4 +15,5 @@ if(isset($_POST['submit'])) {
       mail($recipient, $subject, $mailBody, $headers);
 
       header( "<p> Thank you for reaching out! Your message has been sent. </p>")
-    
+      
+} -->
