@@ -11,24 +11,51 @@ font-family: 'Rubik Mono One', sans-serif; */
 
 body, html { height: 100%; 
     background-image: url("../images/background-image2.jpg");
-    height: 100%;
+    min-height: 100%;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container {
-    background-color: #F9F4EB;
+    background-color: #564E56;
+    opacity:0.6;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
+
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    margin: 3%;
+
+}
+
+h5 {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+#header {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    background-color: #34424D;
-    color: #F9F4EB;
-    /* padding: 2%; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+    text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px;
+    opacity: 0.8;
+    filter: blur(1px);
 }
+
 
 a {
     font-family: 'Karla', sans-serif;
@@ -66,14 +93,17 @@ input, select, textarea {
 }
 
 #contact {
-    position: fixed;
-    width: 80%;
-    top: 30%;
-    left: 10%;
-    background-color: #34424D;
+    margin-top: 5%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
     color: #F9F4EB;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    opacity: 0.8;
+}
+
+#contact:hover {
+    opacity:1
 }
 
 p {
@@ -101,17 +131,22 @@ p {
     background-color: #34424D;
 }
 
-#OS-image, #GudVibes-image, #BTVS-image {
+#OS-image, #GudVibes-image, #BTVS-image, #kodenames {
+    display: block;
     width: 300px;
-    margin: 3%;
+    margin-top: 3%;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     opacity: 0.4;
-    transition: 0.5s
+    transition: 0.5s;
+    z-index: 3
 
 }
 
-#OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover {
-    border: 1px solid purple;
+#OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover, #kodenames:hover {
+    border: 3px solid #34424D;
     opacity: 1;
 
 }
