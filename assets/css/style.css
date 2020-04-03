@@ -19,8 +19,39 @@ body, html { height: 100%;
 }
 
 .container {
-    background-color: #564E56;
-    opacity:0.6;
+       /* * default fallback */ 
+        background: rgb(255, 255, 255) transparent;
+        /* nice browsers */
+        background: rgba(255, 255, 255, 0.1);
+         /* background-color: transparent; */
+}
+
+.work-card, #About, #tech-skills {
+    /* background-color:#808B9E; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+border-radius: 5%;
+    opacity: 0.8
+}
+
+/* .work-card {
+    border-radius: 5%
+} */
+
+.work-card:hover, #About:hover {
+    opacity: 1
+}
+
+.sections {
+    font-family: 'Rubik', sans-serif;
+    color: whitesmoke;
+    text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px;
+    margin: 20%;
+
 }
 
 h1 {
@@ -35,8 +66,7 @@ h2 {
 h3 {
     text-align: center;
     font-family: 'Karla', sans-serif;
-    margin: 3%;
-
+    margin: 5%;
 }
 
 h5 {
@@ -53,7 +83,6 @@ h5 {
     color: whitesmoke;
     text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px;
     opacity: 0.8;
-    filter: blur(1px);
 }
 
 
@@ -83,6 +112,7 @@ input, select, textarea {
 #picture {
     margin: 3%;
     width: 50%;
+    border-radius: 5%
 }
 
 .contact:hover {
@@ -131,7 +161,7 @@ p {
     background-color: #34424D;
 }
 
-#OS-image, #GudVibes-image, #BTVS-image, #kodenames {
+#OS-image, #GudVibes-image, #BTVS-image, #kodenames, #bmazon-image, #liri-image {
     display: block;
     width: 300px;
     margin-top: 3%;
@@ -145,7 +175,7 @@ p {
 
 }
 
-#OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover, #kodenames:hover {
+#OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover, #kodenames:hover, #bmazon-image:hover, #liri-image:hover {
     border: 3px solid #34424D;
     opacity: 1;
 
