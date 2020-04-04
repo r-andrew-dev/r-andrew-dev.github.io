@@ -33,6 +33,13 @@
 
 // })
 
+$(".nav-icon").hover(function() {
+    console.log($(this).data('hover'))
+    $(this).attr("src", $(this).data('hover'))
+}, function () {
+    $(this).attr("src", $(this).data('off'))
+})
+
     $(".work").on("click", function() {
         $(this).css({"width": "600px", "margin": "3% auto", "opacity": "1", "display": "block"});
         $(this).parent().removeClass("six");
