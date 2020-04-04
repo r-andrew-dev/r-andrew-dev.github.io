@@ -33,7 +33,7 @@
 
 // })
 
-$(".nav-icon").hover(function() {
+$(".nav-icon, .contact-link").hover(function() {
     console.log($(this).data('hover'))
     $(this).attr("src", $(this).data('hover'))
 }, function () {
