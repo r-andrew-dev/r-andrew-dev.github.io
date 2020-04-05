@@ -111,11 +111,12 @@ text-shadow: rgba(0, 0, 0, 0.5) 1px 2px 0px; */
     color: whitesmoke;
     text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px;
     margin: 20%;
+    font-size: 52px;
 
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 80px;
 
 }
 
@@ -161,7 +162,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(1
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(191, 206, 210, 0.5668103448275862) 0%, rgba(105, 172, 213, 1) 100%);
     border: 3px solid black;
     /* background: #f0f9ff; Old browsers */
-    */
     /* background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); FF3.6-15
 /* background: -webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); Chrome10-25,Safari5.1-6 */
     /* background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -327,14 +327,15 @@ a:active {
     font-size: 20px;
 }
 
-.contact-link:hover {
-    font-size: 18px;
+.contact-link {
+    padding-top: 10%
 }
 
 
-/* MODAL STYLING */
+/* MODAL STYLING -- Thank you to Paul Mclean for this CodePen using Skeleton for a custom modal. https://codepen.io/paulmcclean/pen/YGXWQY */
 
-.modal, .modal-open {
+.modal,
+.modal-open {
     position: fixed;
     left: 0;
     top: 0;
@@ -358,7 +359,8 @@ a:active {
     z-index: 1;
 }
 
-.modal-inner, .modal-content {
+.modal-inner,
+.modal-content {
     position: relative;
     height: 100%;
     display: flex;
@@ -366,58 +368,60 @@ a:active {
     justify-content: center;
     align-items: center;
 
-    .modal-content {
-        background-color: white;
-        max-width: 35em;
-        padding: 1em 1.5em;
-        position: relative;
-        margin: 2em;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-
-        .modal-close-icon {
-            position: absolute;
-            right: 1.5em;
-        }
-
-        .modal-content-inner {
-            padding-right: 2em;
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                margin-bottom: 0.25em;
-            }
-
-            p {
-                margin-bottom: 1em;
-            }
-        }
-
-        .modal-buttons-seperator {
-            margin: 1.5em 0;
-            margin-top: 0;
-        }
-
-        .modal-buttons {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-
-            button {
-                margin-left: 1em;
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
 }
+
+.modal-content {
+    background-color: white;
+    max-width: 35em;
+    padding: 1em 1.5em;
+    position: relative;
+    margin: 2em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+
 }
+
+.modal-close-icon {
+    position: absolute;
+    right: 1.5em;
+}
+
+.modal-content-inner {
+    padding-right: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.25em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.modal-buttons-seperator {
+    margin: 1.5em 0;
+    margin-top: 0;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    margin-left: 1em;
+}
+
+button:first-child {
+    margin-left: 0;
+}
+
 
 
 .modal-content {
