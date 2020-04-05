@@ -1,37 +1,43 @@
 
+// $("#button-holder").on("click", ".One", function() {
+//     $("#contact-button").css("display","block");;
+//     $(".One").text("About");
+//     $(".current-img").attr("src", $(".current-img").data("main"));
+//     $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
+//     $(".current-img").addClass("work");
+//     $(".current-img").parent().removeClass("twelve current");
+//     $(".current-img").parent().addClass("six");
+//     $(".u-max-full-width").removeClass("current-img");
+//     $("#odd-row").children().attr("class", "twelve columns")
+//     $("#work-button").removeClass("One");
+//     $(".Site").css("display", "none");
+//     $(".Six").css("display", "none");
 
-$("#button-holder").on("click", ".One", function() {
-    $("#contact-button").css("display","block");;
-    $(".One").text("About");
-    $(".current-img").attr("src", $(".current-img").data("main"));
-    $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
-    $(".current-img").addClass("work");
-    $(".current-img").parent().removeClass("twelve current");
-    $(".current-img").parent().addClass("six");
-    $(".u-max-full-width").removeClass("current-img");
-    $("#odd-row").children().attr("class", "twelve columns")
-    $("#work-button").removeClass("One");
-    $(".Site").css("display", "none");
-    $(".Six").css("display", "none");
 
+//     $("#About").fadeOut("slow", function() {
+//         $(".hidden-work, .work").fadeIn("slow");
+//         $("#work-button").addClass("Two");
+//         $("#work-button").removeClass("One");
+//     });
 
-    $("#About").fadeOut("slow", function() {
-        $(".hidden1, .work").fadeIn("slow");
-        $("#work-button").addClass("Two");
-        $("#work-button").removeClass("One");
-    });
+// });
 
-});
-
-$("#button-holder").on("click", ".Two", function(){
-        $(".hidden1").fadeOut("slow", function() {
-            $("#About").fadeIn("slow");
-            $("#work-button").text("Work Sample");
-            $("#work-button").addClass("One");
-            $("#work-button").removeClass("Two");
-        })
+// $("#button-holder").on("click", ".Two", function(){
+//         $(".hidden-work").fadeOut("slow", function() {
+//             $("#About").fadeIn("slow");
+//             $("#work-button").text("Work Sample");
+//             $("#work-button").addClass("One");
+//             $("#work-button").removeClass("Two");
+//         })
      
 
+// })
+
+$(".nav-icon, .contact-link").hover(function() {
+    console.log($(this).data('hover'))
+    $(this).attr("src", $(this).data('hover'))
+}, function () {
+    $(this).attr("src", $(this).data('off'))
 })
 
     $(".work").on("click", function() {
@@ -51,22 +57,22 @@ $("#button-holder").on("click", ".Two", function(){
         $(".Site").attr("href", $(this).data("site"));
     });
 
-    $(".hidden1").on("click", "#back-to-work", function() {
+    $(".work").mouseleave(function() {
         $(".work").show();
         $(".current-img").attr("src", $(".current-img").data("main"));
-        $(".current-img").css({"width": "300px", "margin": "3%", "opacity":"0.6", "display":"inline"});
+        $(".current-img").css({"width": "300px", "margin": "3% auto", "opacity":"0.6", "display":"block"});
         $(".current-img").addClass("work");
         $(".current-img").parent().removeClass("twelve current");
         $(".current-img").parent().addClass("six");
         $(".u-max-full-width").removeClass("current-img");
-        $("#odd-row").children().attr("class", "twelve columns")
+        $(".work").children().attr("class", "twelve columns")
         $(".Site").css("display", "none");
         $(".Six").css("display", "none");
 
     })
 
     $("#button-holder").on("click", "#contact-button", function() {
-        $(".container, .hidden1, #button-holder").fadeOut("slow" , function() {
+        $(".container, .hidden-work, #button-holder").fadeOut("slow" , function() {
         $("#contact").fadeIn("fast");
         })
     })
@@ -89,12 +95,12 @@ $("#button-holder").on("click", ".Two", function(){
         $(".current-img").parent().removeClass("twelve current");
         $(".current-img").parent().addClass("six");
         $(".u-max-full-width").removeClass("current-img");
-        $("#odd-row").children().attr("class", "twelve columns")
+        $(".work").children().attr("class", "twelve columns")
         $("#work-button").removeClass("One");
         $(".Site").css("display", "none");
         $(".Six").css("display", "none");
         $("#contact, button-holder2, #About").fadeOut("slow", function() {
-            $(".container, .hidden1, #button-holder, .work").fadeIn("slow");
+            $(".container, .hidden-work, #button-holder, .work").fadeIn("slow");
             $("#work-button").text("About")
             $("#work-button").addClass("Two");
 
