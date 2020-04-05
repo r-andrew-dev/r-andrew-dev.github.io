@@ -40,21 +40,58 @@ $(".nav-icon, .contact-link").hover(function() {
     $(this).attr("src", $(this).data('off'))
 })
 
+
+
+
+var modal = $(".modal")
+var closeButtons = $(".close-modal")
+// set  modal close behaviour
+$(".close-modal").on('click', function() {
+    console.log('clicked')
+  $('.modal-open').toggle()
+});
+// set close modal behaviour
+// for (i = 0; i < closeButtons.length; ++i) {
+//   closeButtons[i].on('click', function() {
+//     $('modal-open').toggle();
+// 	});
+// }
+// close modal if clicked outside content area
+$('.modal-inner').on('click', function() {
+  $('modal-open').toggle();
+});
+// prevent modal inner from closing parent when clicked
+$('.modal-content').on('click', function(e) {
+	e.stopPropagation();
+});
+
+
+
+
+
+
+
+
+
+
     $(".work").on("click", function() {
-        $(this).css({"width": "600px", "margin": "3% auto", "opacity": "1", "display": "block"});
-        $(this).parent().removeClass("six");
-        $(this).parent().addClass("twelve current");
-        $(this).addClass("current-img")
-        $(this).attr("src", $(this).attr("data-attr"));
-        $(this).removeClass("work");
-        $(this).css("opacity", "1");
-        $(".work").hide();
-        $(".One").addClass("Three");
-        $(".Three").removeClass("One")
-        $(".Three").text("Back to Work");
-        $(".Site").css("display", "inline");
-        $(".Six").css("display", "inline")
-        $(".Site").attr("href", $(this).data("site"));
+        console.log('clicked')
+        // $(".modal-content-inner.title").text($(this.text))
+        // $(this).css({"width": "600px", "margin": "3% auto", "opacity": "1", "display": "block"});
+        // $(this).parent().removeClass("six");
+        // $(this).parent().addClass("twelve current");
+        // $(this).addClass("current-img")
+        // $(this).attr("src", $(this).attr("data-attr"));
+        // $(this).removeClass("work");
+        // $(this).css("opacity", "1");
+        // $(".work").hide();
+        // $(".One").addClass("Three");
+        // $(".Three").removeClass("One")
+        // $(".Three").text("Back to Work");
+        // $(".Site").css("display", "inline");
+        // $(".Six").css("display", "inline")
+        // $(".Site").attr("href", $(this).data("site"));
+        $("modal-open").toggle()
     });
 
     $(".work").mouseleave(function() {
