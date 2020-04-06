@@ -20,12 +20,7 @@ $(".close-modal").on('click', function() {
   $('.modal').removeClass('modal-open')
   $('#nav-bar').show();
 });
-// set close modal behaviour
-// for (i = 0; i < closeButtons.length; ++i) {
-//   closeButtons[i].on('click', function() {
-//     $('modal-open').toggle();
-// 	});
-// }
+
 // close modal if clicked outside content area
 $('.modal-inner').on('click', function() {
     $('.modal').removeClass('modal-open')
@@ -46,15 +41,17 @@ $(".work-card").on("click", function() {
         console.log(site)
         if (!site) {
 
-            $('.modal-content-inner #site-text').text("NOT CURRENTLY HOSTED - CLI APP")
+            $('#modal-live-site').text("CLI APP")
+            $('#modal-live-site').attr('href', "#")
 
         } else {
-            $('.modal-content-inner #site-text').text("Visit Live Site")
-            $('.modal-content-inner #modal-live-site').attr('href', site)
-
+            $('#modal-live-site').text("Live Site")
+            $('#modal-live-site').attr('href', site)
         }
+
+
         code = $(this).find('.code').attr('href')
-        console.log(code)
+        $('#modal-code-site').attr('href', code)
         $(".modal").addClass('modal-open')
         $("#nav-bar").hide();
     });

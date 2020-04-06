@@ -116,11 +116,14 @@ text-shadow: rgba(0, 0, 0, 0.5) 1px 2px 0px; */
     text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px;
     margin: 20%;
     font-size: 52px;
+    text-decoration: underline;
+    font-style: oblique;
 
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 100px;
+    font-family: 'Niconne', cursive;
 
 }
 
@@ -177,6 +180,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(1
 
 a {
     font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .form.contact-me {
@@ -242,16 +247,12 @@ p {
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: whitesmoke;
-}
 
 a:visited {
     background-color: #34424D;
 }
 
-a:hover {
+a:hover, .close-button:hover {
     color: whitesmoke;
     font-size: 32px;
     text-decoration: underline;
@@ -274,7 +275,6 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    opacity: 0.4;
     transition: 0.5s;
     z-index: 3
 }
@@ -286,7 +286,6 @@ a:active {
 #bmazon-image:hover,
 #liri-image:hover {
     border: 3px solid #34424D;
-    opacity: 1;
 
 }
 
@@ -304,7 +303,7 @@ a:active {
 
 #site-button a {
     font-weight: 600;
-    font-size: 11px;
+    font-size: 16px;
     padding: 2% 2%;
     margin: auto 1%;
     text-decoration: none;
@@ -312,7 +311,7 @@ a:active {
     color: #FFFFFF;
 }
 
-.tech-skill {
+.tech-skill, .personal-skill {
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     margin-left: 10%;
@@ -374,24 +373,18 @@ a:active {
 }
 
 .modal-inner {
-    height: 100%;
+    height: 80%;
 }
 
 .modal-content {
-    background-color: white;
-    max-width: 80%;
+    max-width: 100%;
     padding: 1em 1.5em;
     position: fixed;
-    top: 5%;
+    top:0;
     margin: auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-    height: 80%;
+    height: 100%;
 
-}
-
-.modal-close-icon {
-    position: absolute;
-    right: 1.5em;
 }
 
 
@@ -420,6 +413,18 @@ p {
     align-items: center;
 }
 
+#modal-live-site, #modal-code-site, .close-modal {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#modal-live-site:hover, #modal-code-site:hover, .close-modal:hover {
+    color: #34424D;
+    background-color: whitesmoke;
+}
+
 button {
     margin-left: 1em;
 }
@@ -441,7 +446,10 @@ button:first-child {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=0);
     /* IE6-9 */
-    border-radius: 5%
+    border-radius: 5%;
+
+    color: whitesmoke;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 2px 0px;
 }
 
 #modal-image {
