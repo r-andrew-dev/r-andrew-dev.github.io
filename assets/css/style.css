@@ -334,6 +334,10 @@ a:active {
     padding-top: 10%
 }
 
+#personal, #tech-skills {
+    margin-bottom: 25%;
+}
+
 
 /* MODAL STYLING -- Thank you to Paul Mclean for this CodePen using Skeleton for a custom modal. https://codepen.io/paulmcclean/pen/YGXWQY */
 
