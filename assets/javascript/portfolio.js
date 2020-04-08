@@ -9,6 +9,12 @@ $(".nav-icon, .contact-link").hover(function() {
     $(this).attr("src", $(this).data('off'))
 })
 
+$("#menu-icon").hover(function() {
+    $(this).css({'color':'#D3919C', 'border':'2px solid #D3919C'})},
+    function () {
+        $(this).css({'color':'#DBD9D2', 'border':'none'})
+    })
+
 
 // modal operation 
 
