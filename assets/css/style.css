@@ -58,25 +58,48 @@ html {
 
 /* work */
 
-.work-div {
+.work-div, #skills {
     position: relative;
+    overflow: auto;
     width: 100vw;
     max-width: 100vw;
-    margin-top: 20%;
+    margin-top: 40vh;
     background-color: #D3919C;
+}
+
+.work-div {
     clip-path: polygon(
           0 0,
           100vw 20vh,
-          100vw 100vh,
-          0 100vh
+          100vw 180vh,
+          0 180vh
         );
 }
 
-.work-card,
-#About,
-#tech-skills,
-#personal {
+#skills {
+    padding-bottom: 20%;
+    clip-path: polygon(
+        0 20vh,
+        100vw 0,
+        100vw 200vh,
+        0vh 200vh
+      );
+}
+
+.work-card, #skills-section{
     background:#191C23;
+}
+
+#skills-section {
+    display: block;
+    margin: auto;
+    width: 80vw;
+}
+
+.skill {
+    color: #D3919C;
+    padding: 30px;
+    font-size: 80px;
 }
 
 .nav-icon {
@@ -88,25 +111,24 @@ html {
 
 .work-card {
     position: relative;
-    top: 22vh;
-    color: whitesmoke;
+    color: #DBD9D2;
     margin-bottom: 10%;
     box-shadow: 0 8px 6px -6px black;
 }
 
 .work-card:hover {
-    transform: scale(1.1, 1.1)
+    transform: scale(1.2, 1.2)
 }
 
 .work-card::after {
     content: '';
-    position: relative;
-    top: 30vh;
-    right:15vh;
+    position: absolute;
+    top: 8px;
+    left: 8px;
     z-index: -1;
     width: 100%;
     height: 100%;
-    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.3);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -118,13 +140,9 @@ html {
 
 .sections {
     font-family: 'Rubik', sans-serif;
-    color: whitesmoke;
-    /* text-shadow: rgba(0, 0, 0, 0.5) 4px 7px 3px; */
-    margin: 20%;
+    color: #DBD9D2;
     font-size: 52px;
-    /* text-decoration: underline;
-    font-style: oblique; */
-
+    padding: 10%;
 }
 
 h1 {
@@ -150,11 +168,9 @@ h3 {
 }
 
 h5 {
-    float: left;
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
     margin-bottom: 0;
-    margin-right: 3vw;
     padding: 0 1%;
 }
 
@@ -164,9 +180,9 @@ a {
     font-size: 16px;
     text-decoration: none;
     color: #DBD9D2;
-    float: right;
+    float: left;
     padding: 1%;
-    text-align: right;
+    text-align: left;
 }
 
 .form.contact-me {
@@ -174,7 +190,7 @@ a {
     top: 3%;
     margin: 10%;
     background-color: #34424D;
-    color: #F9F4EB;
+    color: #DBD9D2;
     width: 80%;
 }
 
@@ -191,16 +207,11 @@ label {
     width: 90%;
 }
 
-#picture {
-    margin: 3%;
-    width: 50%;
-}
-
 #contact {
     margin-top: 5%;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(191, 206, 210, 0.5668103448275862) 0%, rgba(105, 172, 213, 1) 100%);
-    color: #F9F4EB;
+    color: #DBD9D2;
     text-align: center;
     font-family: 'Rubik', sans-serif;
     opacity: 0.8;
@@ -213,9 +224,9 @@ label {
 p {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
-    color: #F9F4EB;
+    color: #DBD9D2;
     margin: 1%;
-    float: right;
+    float: left;
 }
 
 .button-primary.custom,
@@ -270,25 +281,13 @@ a:active {
     margin: auto 1%;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
-    color: #FFFFFF;
-}
-
-.tech-skill, .personal-skill {
-    font-size: 20px;
-    font-family: 'Karla', sans-serif;
-    margin-left: 10%;
-    margin-right: 5%;
-    padding: 3% 9%;
-}
-
-.skill-label {
-    text-align: center;
-    margin: auto;
-    color: whitesmoke;
+    color: #DBD9D2;
 }
 
 #bio {
-    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    color: #DBD9D2;
     font-size: 20px;
 }
 
@@ -402,6 +401,19 @@ button:first-child {
     position: relative;
     top: 20%;
     right: 1%;
+}
+
+@media screen and (max-width: 910) {
+    a {
+        float: left;
+        text-align: left;
+    }
+
+    p {
+        float: left;
+        text-align: left;
+    }
+
 }
 
 @media screen and (max-width: 780px) {
