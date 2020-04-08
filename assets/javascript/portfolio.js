@@ -15,6 +15,16 @@ $("#menu-icon").hover(function() {
         $(this).css({'color':'#DBD9D2', 'border':'none'})
     })
 
+$('#menu-icon').on('click', function() {
+    $('.dropdown-content').toggle();
+})
+
+$('.dropdown-content').on('mouseleave', function() {
+
+    $('.dropdown-content').toggle();
+
+})
+
 
 // modal operation 
 
@@ -40,7 +50,7 @@ $('.modal-content').on('click', function(e) {
 
 $(".work-card").on("click", function() {
         title = $(this).find(".title").text()
-        $(".modal-content-inner .title").text(title);
+        $(".modal-content-inner .modal-title").text(title);
         source = $(this).find("img").data('attr')
         $(".modal-content-inner #modal-image").attr('src', source);
         site = $(this).find('.live').attr('href')

@@ -1,6 +1,6 @@
-/* font-family: 'Karla', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Rubik Mono One', sans-serif; */
+
+/* font-family: 'Karla', sans-serif; */
+
 
 @font-face {
     font-family: 'Noir Medium';
@@ -30,6 +30,19 @@ html {
     background-size: cover;
 }
 
+a {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #DBD9D2;
+    float: left;
+    text-align: left;
+}
+
+.work-card a{
+    padding: 1%;
+}
+
 /* Navigation bar styling */
 
 #nav-bar {
@@ -45,6 +58,33 @@ html {
     position: absolute;
     right: 1%;
     padding: 1%;
+    clear: both;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    clear: both;
+    display: none;
+    position: fixed;
+    right: 0;
+    background: #191C23;
+    min-width: 250px;
+    z-index: 1
+}
+
+.dropdown-content a {
+
+    padding: 60px, 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    clear: both;
+    
 }
 
 /* Main container */
@@ -88,6 +128,7 @@ html {
 
 .work-card, #skills-section{
     background:#191C23;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 #skills-section {
@@ -139,7 +180,7 @@ html {
 
 
 .sections {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Karla', sans-serif;
     color: #DBD9D2;
     font-size: 52px;
     padding: 10%;
@@ -153,12 +194,21 @@ h1 {
     padding-top: 1%;
     left:  1%;
     margin-bottom: 0;
-    display: block;
+    float: left;
 
 }
 
 h2 {
-    font-size: 44px;
+    text-align: center;
+    color: #DBD9D2;
+    width: 80%;
+    margin-top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-size: 44px; */
+    background: #191C23;
+    padding: 10vh 10vw;
 }
 
 h3 {
@@ -169,9 +219,19 @@ h3 {
 
 h5 {
     font-size: 20px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Karla', sans-serif;
     margin-bottom: 0;
     padding: 0 1%;
+}
+
+#work-title {
+
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.modal-title {
+    font-size: 16vw;
+    color: #DBD9D2
 }
 
 
@@ -208,12 +268,12 @@ label {
 }
 
 #contact {
-    margin-top: 5%;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(191, 206, 210, 0.5668103448275862) 0%, rgba(105, 172, 213, 1) 100%);
+    padding: 5vh;
+    margin-top: 10vh;
+    background: #191C23;
     color: #DBD9D2;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Karla', sans-serif;
     opacity: 0.8;
 }
 
@@ -242,7 +302,7 @@ a:visited {
     background-color: #34424D;
 }
 
-a:hover, .close-button:hover {
+a:hover, .close-modal:hover {
     color: #D3919C;
     text-decoration: underline;
 }
@@ -280,16 +340,26 @@ a:active {
     padding: 2% 2%;
     margin: auto 1%;
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Karla', sans-serif;
     color: #DBD9D2;
 }
 
 #bio {
     margin: 0;
     padding: 0;
-    color: #DBD9D2;
+    color: #191C23;
     font-size: 20px;
 }
+
+#picture {
+    background:  #191C23;
+    box-shadow: 0 8px 6px -6px black;
+
+}
+
+ul {
+    list-style: square;
+    }       
 
 .contact-link {
     padding-top: 10%
@@ -365,15 +435,19 @@ a:active {
 }
 
 #modal-live-site, #modal-code-site, .close-modal {
-    color: whitesmoke;
+    color: #DBD9D2;
     font-size: 16px;
     font-weight: 600;
     margin: 0;
 }
 
 #modal-live-site:hover, #modal-code-site:hover, .close-modal:hover {
-    color: #34424D;
-    background-color: whitesmoke;
+    color: #D3919C;
+    background-color: #191C23;
+}
+
+#modal-live-site:active, #modal-code-site:active, .close-modal:active {
+    background-color: #DBD9D2;
 }
 
 button {
@@ -383,7 +457,6 @@ button {
 button:first-child {
     margin-left: 0;
 }
-
 
 
 .modal-content {
@@ -397,13 +470,14 @@ button:first-child {
     width: 100%;
 }
 
-.nav-icons {
-    position: relative;
-    top: 20%;
-    right: 1%;
+@media sreen and (max-midth: 400px) {
+
+    .skill {
+        padding: 5px;
+    }
 }
 
-@media screen and (max-width: 910) {
+@media screen and (max-width: 910px) {
     a {
         float: left;
         text-align: left;
