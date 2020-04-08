@@ -127,6 +127,7 @@ a {
 }
 
 .work-card, #skills-section{
+    text-align: center;
     background:#191C23;
     box-shadow: 0 8px 6px -6px black;
 }
@@ -230,7 +231,8 @@ h5 {
 }
 
 .modal-title {
-    font-size: 16vw;
+    text-align: center;
+    font-size: 40px;
     color: #DBD9D2
 }
 
