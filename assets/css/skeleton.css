@@ -37,8 +37,8 @@
     box-sizing: border-box; }
   .column,
   .columns {
-    width: 48%;
     float: left;
+    width: 48%;
     box-sizing: border-box; }
 
     .offset-by-one.column,
