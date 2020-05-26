@@ -203,13 +203,13 @@ h2 {
     text-align: center;
     color: #DBD9D2;
     width: 80%;
-    margin-top: 50%;
+    margin-top: 40vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* font-size: 44px; */
     background: #191C23;
     padding: 10vh 10vw;
+    box-shadow: 0 8px 6px -6px #D3919C;
 }
 
 h3 {
@@ -219,7 +219,7 @@ h3 {
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 4vw;
     font-family: 'Karla', sans-serif;
     margin-bottom: 0;
     padding: 0 1%;
@@ -227,12 +227,11 @@ h5 {
 
 #work-title {
 
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px #D3919C;
 }
 
 .modal-title {
-    text-align: center;
-    font-size: 40px;
+    font-size: 16vw;
     color: #DBD9D2
 }
 
@@ -347,6 +346,8 @@ a:active {
 }
 
 #bio {
+    position: relative;
+    left: 50px;
     margin: 0;
     padding: 0;
     color: #191C23;
@@ -367,10 +368,21 @@ ul {
     padding-top: 10%
 }
 
+.Contact {
+    margin-left: 40px;
+}
+
 #personal, #tech-skills {
     margin-bottom: 25%;
 }
 
+.initial {
+   color: #D3919C
+}
+
+#more-info {
+    color: #D3919C
+}
 
 /* MODAL STYLING -- Thank you to Paul Mclean for this CodePen using Skeleton for a custom modal. https://codepen.io/paulmcclean/pen/YGXWQY */
 
