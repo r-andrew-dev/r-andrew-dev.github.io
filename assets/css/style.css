@@ -111,8 +111,8 @@ a {
     clip-path: polygon(
           0 0,
           100vw 20vh,
-          100vw 180vh,
-          0 180vh
+          100vw 200vh,
+          0 200vh
         );
 }
 
@@ -231,8 +231,9 @@ h5 {
 }
 
 .modal-title {
-    font-size: 16vw;
-    color: #DBD9D2
+    font-size: 6vw;
+    color: #DBD9D2;
+    text-align: center;
 }
 
 
@@ -273,10 +274,12 @@ label {
     margin-top: 10vh;
     background: #191C23;
     color: #DBD9D2;
-    text-align: center;
     font-family: 'Karla', sans-serif;
     opacity: 0.8;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
 
 #contact:hover {
     opacity: 1
@@ -370,6 +373,7 @@ ul {
 
 .Contact {
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 #personal, #tech-skills {
@@ -444,7 +448,7 @@ ul {
 .modal-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -452,7 +456,14 @@ ul {
     color: #DBD9D2;
     font-size: 16px;
     font-weight: 600;
-    margin: 0;
+    margin: 5px;
+}
+
+.close-modal {
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 #modal-live-site:hover, #modal-code-site:hover, .close-modal:hover {
@@ -492,10 +503,6 @@ button:first-child {
 }
 
 @media screen and (max-width: 910px) {
-    a {
-        float: left;
-        text-align: left;
-    }
 
     p {
         float: left;
@@ -510,6 +517,6 @@ button:first-child {
     }
     #menu-icon {
 
-        font-size: 40px;
+        font-size: 35px;
     }
 }
