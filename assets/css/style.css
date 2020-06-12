@@ -557,6 +557,10 @@ button:first-child {
         margin-right: 15%;
     }
 
+    .description {
+        display: inline;
+    }
+
 
   
     #row2 {
