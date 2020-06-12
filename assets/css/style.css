@@ -170,7 +170,9 @@ ul {
 }
 
 .work-card:hover {
-    transform: scale(1.2, 1.2)
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+
 }
 
 .work-card:hover > .description {
@@ -607,6 +609,6 @@ button:first-child {
 
 
     h5 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
