@@ -39,8 +39,14 @@ a {
     text-align: left;
 }
 
-.work-card a{
+ul {
+    list-style: none;
+}
+
+.work-card a, .special-text {
     padding: 1%;
+    margin-right:10px;
+    margin-left: 10px;
 }
 
 /* Navigation bar styling */
@@ -119,7 +125,7 @@ a {
 #skills {
     padding-bottom: 20%;
     clip-path: polygon(
-        0 20vh,
+        0 15vh,
         100vw 0,
         100vw 200vh,
         0vh 200vh
@@ -155,11 +161,20 @@ a {
     position: relative;
     color: #DBD9D2;
     margin-bottom: 10%;
+    margin-right: 2%;
     box-shadow: 0 8px 6px -6px black;
+}
+
+.description {
+    display: none;
 }
 
 .work-card:hover {
     transform: scale(1.2, 1.2)
+}
+
+.work-card:hover > .description {
+    display: inline;
 }
 
 .work-card::after {
@@ -219,7 +234,7 @@ h3 {
 }
 
 h5 {
-    font-size: 4vw;
+    font-size: 2vmax;
     font-family: 'Karla', sans-serif;
     margin-bottom: 0;
     padding: 0 1%;
@@ -355,25 +370,18 @@ a:active {
     padding: 0;
     color: #191C23;
     font-size: 20px;
+    list-style: square
 }
 
 #picture {
     background:  #191C23;
     box-shadow: 0 8px 6px -6px black;
 
-}
-
-ul {
-    list-style: square;
-    }       
+}    
 
 .contact-link {
-    padding-top: 10%
-}
-
-.Contact {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 #personal, #tech-skills {
@@ -388,6 +396,13 @@ ul {
     color: #D3919C
 }
 
+.code {
+    float: right;
+}
+
+#row2 {
+    margin-left: 3.5%;
+}
 /* MODAL STYLING -- Thank you to Paul Mclean for this CodePen using Skeleton for a custom modal. https://codepen.io/paulmcclean/pen/YGXWQY */
 
 .modal,
@@ -475,6 +490,14 @@ ul {
     background-color: #DBD9D2;
 }
 
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+}
+
 button {
     margin-left: 1em;
 }
@@ -495,11 +518,60 @@ button:first-child {
     width: 100%;
 }
 
-@media sreen and (max-midth: 400px) {
+@media screen and (max-width: 550px) {
+
+    h1 {
+        font-size: 1vw;
+    }
+
+    h5 {
+        font-size: 3vmax;
+    }
 
     .skill {
         padding: 5px;
     }
+
+    .work-card {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work-card:hover {
+        transform: scale(1.0, 1.0)
+    }
+
+    .work-div {
+        clip-path: polygon(
+              0 0,
+              100vw 15vh,
+              100vw 500vh,
+              0 500vh
+            );
+    }
+
+
+    .work-card a, .special-text {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+  
+    #row2 {
+        margin-left: 0
+    }
+  
+    #row1 {
+      margin-left: 0 
+    }
+
+    #menu-icon {
+        font-size: 200%;
+    }
+
+
 }
 
 @media screen and (max-width: 910px) {
