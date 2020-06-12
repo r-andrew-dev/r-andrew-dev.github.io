@@ -492,14 +492,6 @@ a:active {
     background-color: #DBD9D2;
 }
 
-#projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-content: space-evenly;
-}
-
 button {
     margin-left: 1em;
 }
@@ -540,10 +532,6 @@ button:first-child {
         margin-right: auto;
     }
 
-    .work-card:hover {
-        transform: scale(1.0, 1.0)
-    }
-
     .work-div {
         clip-path: polygon(
               0 0,
@@ -574,7 +562,7 @@ button:first-child {
     }
 
     #menu-icon {
-        font-size: 200%;
+        font-size: 200vw;
     }
 
 
@@ -606,9 +594,19 @@ button:first-child {
         margin-right: auto;
     }
 
-
-
     h5 {
         font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 4000px) {
+
+    h1 {
+        font-size: 3vw;
+    }
+    .work-div, #skills, #skills-section {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
