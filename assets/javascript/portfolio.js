@@ -57,7 +57,7 @@ $(".work-card").on("click", function() {
         console.log(site)
         if (!site) {
 
-            $('#modal-live-site').text("CLI APP")
+            $('#modal-live-site').text("No Site/CLI")
             $('#modal-live-site').attr('href', "#")
 
         } else {
