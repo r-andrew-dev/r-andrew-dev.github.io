@@ -546,8 +546,8 @@ button:first-child {
         clip-path: polygon(
               0 0,
               100vw 15vh,
-              100vw 500vh,
-              0 500vh
+              100vw 600vh,
+              0 600vh
             );
     }
 
@@ -594,5 +594,19 @@ button:first-child {
     #menu-icon {
 
         font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .work-div, #skills, #skills-section {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    h5 {
+        font-size: 40px;
     }
 }
