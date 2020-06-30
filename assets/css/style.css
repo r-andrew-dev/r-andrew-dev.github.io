@@ -113,12 +113,29 @@ ul {
     background-color: #D3919C;
 }
 
+#skills {
+    clip-path: polygon(
+          0 0,
+          100vw 20vh,
+          100vw 100vh,
+          0 100vh
+        );
+}
 .work-div {
     clip-path: polygon(
           0 0,
           100vw 20vh,
           100vw 200vh,
           0 200vh
+        );
+}
+
+#about {
+    clip-path: polygon(
+          0 0,
+          100vw 20vh,
+          100vw 400vh,
+          0 400vh
         );
 }
 
@@ -141,6 +158,7 @@ ul {
 #skills-section {
     display: block;
     margin: auto;
+    margin-bottom: 0;
     width: 80vw;
 }
 
@@ -202,6 +220,7 @@ ul {
     color: #DBD9D2;
     font-size: 52px;
     padding: 10%;
+    padding-bottom: 3%;
 }
 
 h1 {
@@ -244,7 +263,7 @@ h5 {
 
 #work-title {
 
-    box-shadow: 0 8px 6px -6px #D3919C;
+    box-shadow: 0 6px -6px #D3919C;
 }
 
 .modal-title {
@@ -369,10 +388,11 @@ a:active {
     position: relative;
     left: 50px;
     margin: 0;
+    margin-bottom: 20%;
+    margin-right: 8.66666666667%;
     padding: 0;
     color: #191C23;
-    font-size: 20px;
-    list-style: square
+    font-size: 16px;
 }
 
 #picture {
@@ -384,10 +404,6 @@ a:active {
 .contact-link {
     margin-right: 3%;
     margin-left: 3%;
-}
-
-#personal, #tech-skills {
-    margin-bottom: 25%;
 }
 
 .initial {
